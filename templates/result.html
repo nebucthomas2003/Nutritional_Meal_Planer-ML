@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan Result</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS to center-align the h1 element */
+        .center-align {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Add the 'center-align' class to center align the h1 element -->
+        <h1 class="mt-5 center-align">Meal Plan Result</h1>
+        <div class="row mt-5">
+            <div class="col-md-6 offset-md-3">
+                <p>Weight: {{ weight }} kg</p>
+                <p>Height: {{ height_cm }} cm</p>
+                <p>BMI: {{ bmi }}</p>
+                <p>BMI Category: {{ bmi_category }}</p>
+                <p>Your predicted meal plan is: {{ meal_plan }}</p>
+                <a href="/" class="btn btn-primary">Back to BMI Input</a>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
